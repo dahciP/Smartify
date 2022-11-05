@@ -85,9 +85,8 @@ Inside Client & Server install with npm
 
 ## Authors
 
-- Hinduraj Kadam - [@Hinduraj8199](https://github.com/Hinduraj8199)
-- Vedansh Wani [@vedascript](https://github.com/vedascript)
-- Gaurav Tambe [@tambegaurav](https://github.com/tambegaurav)
+-Roshan Sawant
+-Chinmay Pichad
 
 ## Acknowledgements
 
