@@ -1,6 +1,6 @@
-# Coursera Clone (MERN Stack)
+# Smartify
 
-Coursera is a ed-tech platform where anybody can browse for what they want to learn and can enroll and earn a skill for themselves. This Project is build as part of Masai School (30 weeks Bootcamp) Curriculum project and completed in duration of 2 weeks.
+Smartify is a ed-tech platform where anybody can browse for what they want to learn and can enroll and earn a skill for themselves. This Project is build as part of Masai School (30 weeks Bootcamp) Curriculum project and completed in duration of 2 weeks.
 
 ## Demo
 
