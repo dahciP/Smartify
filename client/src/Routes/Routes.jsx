@@ -13,8 +13,8 @@ import { ProfilePage } from '../Pages/ProfilePage/ProfilePage';
 import { EditProfile } from '../Pages/EditProfile/EditProfile';
 import SignupPage from '../Pages/SignupPage';
 import CategoryCoursesPage from '../Pages/CategoryCoursesPage/CategoryCoursesPage';
+import Job from '../Pages/Job/JobPage';
 import { StudentsList } from '../Pages/AdminCoursePage/StudentsList';
-
 
 const Routes = () => {
   return (
