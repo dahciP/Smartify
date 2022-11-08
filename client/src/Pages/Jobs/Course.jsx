@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Job({ job }) {
+export default function Course({ course }) {
   const classes = useStyles();
 
   return (
@@ -33,12 +33,12 @@ export default function Job({ job }) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={job.job_img}
-          title={job.job_name}
+          image={course.course_img}
+          title={course.course_name}
         />
 
         <CardContent>
-          <h2>{job.job_name}</h2>
+          <h2>{course.course_name}</h2>
           <Typography variant="body2" color="textSecondary" component="p">
             University
           </Typography>
