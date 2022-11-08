@@ -18,12 +18,12 @@ import {
 } from 'pure-react-carousel';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import styles from './categoryjobs.module.css';
+import styles from './categorycourses.module.css';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import useWindowDimensions from '../../CustomHooks/useWindowDimensions';
-import Jobs from './Jobs';
+import Course from './Course';
 import Footer from '../../Shared-Components/Footer/Footer';
-import { getJobs } from '../../CustomHooks/JobsApi';
+import { getCourses } from '../../CustomHooks/CourseApi';
 import Navbar from '../../Shared-Components/Navbar';
 import useDocumentTitle from '../../CustomHooks/useDocumentTitle';
 
@@ -46,17 +46,17 @@ const Banner = styled.div`
   }
 `;
 
-const CategoryJobsPage = () => {
-  const [jobs, setjobs] = React.useState([]);
+const CategoryCoursesPage = () => {
+  const [courses, setCourses] = React.useState([]);
   const { category } = useParams();
   const history = useHistory();
 
-  useDocumentTitle(`Smartify | Browse`);
+  useDocumentTitle(`Coursera | Browse`);
 
-  console.log(jobs);
+  console.log(courses);
   React.useEffect(() => {
-    getJobs(category).then((res) => {
-      setjobs(res);
+    getCourses(category).then((res) => {
+      setCourses(res);
     });
   }, []);
 
@@ -66,23 +66,23 @@ const CategoryJobsPage = () => {
       <Banner>
         <h1>{category} </h1>
       </Banner>
-      {jobs.length > 0 ? (
+      {courses.length > 0 ? (
         <div>
           <div className={styles.empty}>
-            <h2>Most Popular {category} Jobs</h2>
+            <h2>Most Popular {category} </h2>
           </div>
           <section className={styles.main}>
-            {jobs.length > 0 &&
-              jobs.map((job) => {
+            {courses.length > 0 &&
+              courses.map((course) => {
                 return (
                   <Link
-                    to={`/browse/${job.category}/${job.job_name}`}
-                    key={job._id}
+                    to={`/browse/${course.category}/${course.course_name}`}
+                    key={course._id}
                     className={styles.card}
                   >
-                    <Jobs job={job} />
+                    <Course course={course} />
                     <div className={styles.cardInfo}>
-                      <h4>{job.author}</h4>
+                      <h4>{course.author}</h4>
                     </div>
                   </Link>
                 );
@@ -91,7 +91,7 @@ const CategoryJobsPage = () => {
         </div>
       ) : (
         <div className={styles.empty}>
-          <h2>No Jobs Found For This Category</h2>
+          <h2>No Courses Found For This Category</h2>
           <Link style={{ fontSize: 20 }} to="/">
             Go to Home Page
           </Link>
@@ -105,4 +105,4 @@ const CategoryJobsPage = () => {
   );
 };
 
-export default CategoryJobsPage;
+export default CategoryCoursesPage;
