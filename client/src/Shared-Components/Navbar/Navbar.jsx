@@ -138,7 +138,7 @@ const Navbar = () => {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <Button color="inherit">FOR ENTERPRISE</Button>
+        <Button type="button" color="inherit" onClick={handleOpen}>FOR ENTERPRISE</Button>
       </MenuItem>
       <MenuItem>
         <Button color="inherit">FOR STUDENTS</Button>
