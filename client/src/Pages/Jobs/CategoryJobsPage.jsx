@@ -51,7 +51,7 @@ const CategoryJobsPage = () => {
   const { category } = useParams();
   const history = useHistory();
 
-  useDocumentTitle(`Coursera | Browse`);
+  useDocumentTitle(`Smartify | Browse`);
 
   console.log(jobs);
   React.useEffect(() => {
