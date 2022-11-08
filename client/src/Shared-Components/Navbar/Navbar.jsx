@@ -427,8 +427,9 @@ const Navbar = () => {
           </Hidden>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <Button>FOR ENTERPRISE</Button>
-            <Button color="inherit">FOR STUDENTS</Button>
+            <Link to="/browse/job">
+              <Button color="inherit">JOBS</Button>
+            </Link>
             {!isAuth && (
               <Button type="button" color="inherit" onClick={handleOpen}>
                 Login
