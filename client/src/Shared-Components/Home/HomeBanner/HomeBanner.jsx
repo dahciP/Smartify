@@ -51,7 +51,7 @@ export const HomeBanner = () => {
                   <Box height="100%">
                     <img
                       className={classes.heroImg}
-                      src="https://bit.ly/2Sw2WJR"
+                      src="https://i.postimg.cc/LsHh6zh1/42660481.jpg"
                       alt="hero img"
                     />
                   </Box>
@@ -62,7 +62,7 @@ export const HomeBanner = () => {
                   <Box height="75%" className={classes.mediumHeroImg}>
                     <img
                       className={classes.heroImg}
-                      src="https://bit.ly/2Sw2WJR"
+                      src="https://i.postimg.cc/LsHh6zh1/42660481.jpg"
                       alt="hero img"
                     />
                   </Box>
@@ -77,7 +77,7 @@ export const HomeBanner = () => {
                   <Box height="50%" style={{ marginLeft: '40%' }}>
                     <img
                       className={classes.heroImg}
-                      src="https://bit.ly/2Sw2WJR"
+                      src="https://i.postimg.cc/LsHh6zh1/42660481.jpg"
                       alt="hero img"
                     />
                   </Box>
