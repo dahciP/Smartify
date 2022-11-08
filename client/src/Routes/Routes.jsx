@@ -28,6 +28,9 @@ const Routes = () => {
         <Route exact path="/browse/:category/:courseName">
           <CourseDetailsPage />
         </Route>
+        <Route exact path="/browse/job">
+          <Job />
+        </Route>
         <Route exact path="/courseMat/:id">
           <CourseMaterial />
         </Route>
