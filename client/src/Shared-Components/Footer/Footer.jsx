@@ -20,9 +20,7 @@ const Grid = styled.div`
 
   & > .app-link {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     & > img {
       width: 150px;
       margin: 20px;
@@ -60,113 +58,57 @@ const Footer = () => {
       <Grid>
         <div>
           <h3>Top Online Courses</h3>
-          <p>Finding Purpose & Meaning in Life</p>
-          <p>Understanding Medical Research</p>
-          <p>Japanese for Beginners</p>
-          <p>Introduction to Cloud Computing</p>
-          <p>Foundations of Mindfulness</p>
-          <p>Finding Purpose & Meaning in Life</p>
-          <p>Understanding Medical Research</p>
-          <p>Japanese for Beginners</p>
-          <p>Introduction to Cloud Computing</p>
-          <p>Foundations of Mindfulness</p>
+          <p>React</p>
+          <p>Web Development</p>
+          <p>App Development</p>
         </div>
         <div>
-          <h3>Top Online Specializations</h3>
-          <p>Finding Purpose & Meaning in Life</p>
-          <p>Understanding Medical Research</p>
-          <p>Japanese for Beginners</p>
-          <p>Introduction to Cloud Computing</p>
-          <p>Foundations of Mindfulness</p>
-          <p>Finding Purpose & Meaning in Life</p>
-          <p>Understanding Medical Research</p>
-          <p>Japanese for Beginners</p>
-          <p>Introduction to Cloud Computing</p>
-          <p>Foundations of Mindfulness</p>
+          <h3>Top Online Courses</h3>
+          <p>React</p>
+          <p>Web Development</p>
+          <p>App Development</p>
         </div>
         <div>
-          <h3>Online Certificates</h3>
-          <p>Finding Purpose & Meaning in Life</p>
-          <p>Understanding Medical Research</p>
-          <p>Japanese for Beginners</p>
-          <p>Introduction to Cloud Computing</p>
-          <p>Foundations of Mindfulness</p>
-          <p>Finding Purpose & Meaning in Life</p>
-          <p>Understanding Medical Research</p>
-          <p>Japanese for Beginners</p>
-          <p>Introduction to Cloud Computing</p>
-          <p>Foundations of Mindfulness</p>
+          <h3>Top Online Courses</h3>
+          <p>React</p>
+          <p>Web Development</p>
+          <p>App Development</p>
         </div>
         <div>
-          <h3>Online Degree Programs</h3>
-          <p>Finding Purpose & Meaning in Life</p>
-          <p>Understanding Medical Research</p>
-          <p>Japanese for Beginners</p>
-          <p>Introduction to Cloud Computing</p>
-          <p>Foundations of Mindfulness</p>
-          <p>Finding Purpose & Meaning in Life</p>
-          <p>Understanding Medical Research</p>
-          <p>Japanese for Beginners</p>
-          <p>Introduction to Cloud Computing</p>
-          <p>Foundations of Mindfulness</p>
+          <h3>Top Online Courses</h3>
+          <p>React</p>
+          <p>Web Development</p>
+          <p>App Development</p>
         </div>
 
         <div>
-          <h3>Top Online Specializations</h3>
-          <p>Finding Purpose & Meaning in Life</p>
-          <p>Understanding Medical Research</p>
-          <p>Japanese for Beginners</p>
-          <p>Introduction to Cloud Computing</p>
-          <p>Foundations of Mindfulness</p>
-          <p>Finding Purpose & Meaning in Life</p>
-          <p>Understanding Medical Research</p>
-          <p>Japanese for Beginners</p>
-          <p>Introduction to Cloud Computing</p>
-          <p>Foundations of Mindfulness</p>
+          <h3>Top Online Courses</h3>
+          <p>React</p>
+          <p>Web Development</p>
+          <p>App Development</p>
         </div>
         <div>
-          <h3>Online Certificates</h3>
-          <p>Finding Purpose & Meaning in Life</p>
-          <p>Understanding Medical Research</p>
-          <p>Japanese for Beginners</p>
-          <p>Introduction to Cloud Computing</p>
-          <p>Foundations of Mindfulness</p>
-          <p>Finding Purpose & Meaning in Life</p>
-          <p>Understanding Medical Research</p>
-          <p>Japanese for Beginners</p>
-          <p>Introduction to Cloud Computing</p>
-          <p>Foundations of Mindfulness</p>
+          <h3>Top Online Courses</h3>
+          <p>React</p>
+          <p>Web Development</p>
+          <p>App Development</p>
         </div>
         <div>
-          <h3>Online Degree Programs</h3>
-          <p>Finding Purpose & Meaning in Life</p>
-          <p>Understanding Medical Research</p>
-          <p>Japanese for Beginners</p>
-          <p>Introduction to Cloud Computing</p>
-          <p>Foundations of Mindfulness</p>
-          <p>Finding Purpose & Meaning in Life</p>
-          <p>Understanding Medical Research</p>
-          <p>Japanese for Beginners</p>
-          <p>Introduction to Cloud Computing</p>
-          <p>Foundations of Mindfulness</p>
+          <h3>Build By</h3>
+          <p>@Chinmay Pichad</p>
+          <p>@Roshan Sawant</p>
         </div>
-
-        <div className="app-link">
-          <img
-            src="https://d3njjcbhbojbot.cloudfront.net/web/images/icons/download_on_the_app_store_badge_en.svg"
-            alt="appstore"
-          />
-          <img
-            src="https://d3njjcbhbojbot.cloudfront.net/web/images/icons/en_generic_rgb_wo_45.png"
-            alt="gplay"
-          />
-
-          <img
-            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d3njjcbhbojbot.cloudfront.net/web/images/icons/2018-B-Corp-Logo-Black-S.png?auto=format%2Ccompress&dpr=2&w=151&h=120&q=40"
-            alt="app-img"
-          />
+        <div>
+          <h3>Top Online Courses</h3>
+          <p>React</p>
+          <p>Web Development</p>
+          <p>App Development</p>
+        </div>
+        <div>
+          <h4> Build by - @Chinmay Pichad @Roshan Sawant</h4>
         </div>
       </Grid>
+
     </Cont>
   );
 };
