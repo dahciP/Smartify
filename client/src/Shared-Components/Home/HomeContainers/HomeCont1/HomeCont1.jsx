@@ -10,7 +10,7 @@ export const HomeCont1 = () => {
         <h2 className={classes.heading}>
           We collaborate with &nbsp;
           <a
-            href="https://www.coursera.org/about/partners"
+            href="https://www.google.com"
             style={{ color: 'rgb(0, 86, 210)', textDecoration: 'none' }}
           >
             200+ leading universities and companies

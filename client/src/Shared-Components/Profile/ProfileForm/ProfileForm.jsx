@@ -121,7 +121,7 @@ export const ProfileForm = () => {
               </Grid>
               <Grid item>
                 <p>
-                  Let the Coursera community of other learners and instructors
+                  Let the Smartify community of other learners and instructors
                   recognize you.
                 </p>
               </Grid>
@@ -337,7 +337,7 @@ export const ProfileForm = () => {
               </Grid> */}
 
             {/* Employer */}
-            {/* 
+            {/*
               <Grid
                 item
                 container
