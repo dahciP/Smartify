@@ -8,7 +8,7 @@ import JobAbout from '../../Shared-Components/JobAbout/JobAbout';
 import JobBanner from '../../Shared-Components/JobBanner/JobBanner';
 import JobNav from '../../Shared-Components/JobBanner/JobNav';
 import Navbar from '../../Shared-Components/Navbar';
-import { fetchCourse } from '../../Redux/courseDetails/actions';
+import { fetchCourse } from '../../Redux/jobDetails/actions';
 import useDocumentTitle from '../../CustomHooks/useDocumentTitle';
 import Spinner from '../../Shared-Components/Spinner';
 

@@ -33,7 +33,7 @@ const Routes = () => {
         <Route exact path="/browse/job">
           <CategoryJobsPage />
         </Route>
-        <Route exact path="/browse/job/jobName">
+        <Route exact path="/browse/job/:jobName">
           <JobDetailsPage />
         </Route>
         <Route exact path="/courseMat/:id">
