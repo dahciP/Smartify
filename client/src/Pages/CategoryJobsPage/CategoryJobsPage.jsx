@@ -18,10 +18,10 @@ import {
 } from 'pure-react-carousel';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import styles from './categorycourses.module.css';
+import styles from './categoryjobs.module.css';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import useWindowDimensions from '../../CustomHooks/useWindowDimensions';
-import Course from './Course';
+import Job from './Job';
 import Footer from '../../Shared-Components/Footer/Footer';
 import { getCourses } from '../../CustomHooks/CourseApi';
 import Navbar from '../../Shared-Components/Navbar';
@@ -46,12 +46,12 @@ const Banner = styled.div`
   }
 `;
 
-const CategoryCoursesPage = () => {
+const CategoryJobsPage = () => {
   const [courses, setCourses] = React.useState([]);
   const { category } = useParams();
   const history = useHistory();
 
-  useDocumentTitle(`Coursera | Browse`);
+  useDocumentTitle(`Smartify | Browse`);
 
   console.log(courses);
   React.useEffect(() => {
@@ -80,7 +80,7 @@ const CategoryCoursesPage = () => {
                     key={course._id}
                     className={styles.card}
                   >
-                    <Course course={course} />
+                    <Job course={course} />
                     <div className={styles.cardInfo}>
                       <h4>{course.author}</h4>
                     </div>
@@ -91,7 +91,7 @@ const CategoryCoursesPage = () => {
         </div>
       ) : (
         <div className={styles.empty}>
-          <h2>No Courses Found For This Category</h2>
+          <h2>No Jobs Found For This Category</h2>
           <Link style={{ fontSize: 20 }} to="/">
             Go to Home Page
           </Link>
@@ -105,4 +105,4 @@ const CategoryCoursesPage = () => {
   );
 };
 
-export default CategoryCoursesPage;
+export default CategoryJobsPage;

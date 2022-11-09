@@ -18,8 +18,8 @@ import Navbar from '../Navbar/Navbar';
 import useDocumentTitle from '../../CustomHooks/useDocumentTitle';
 
 // eslint-disable-next-line react/prop-types
-const CoursesList = () => {
-  useDocumentTitle('Coursera | Search');
+const JobList = () => {
+  useDocumentTitle('Smartify | Search');
 
   const classes = useStyles();
   const { query } = useParams();
@@ -96,7 +96,7 @@ const CoursesList = () => {
       <div>
         {list.length === 0 ? (
           <div className={classes.emptylist}>
-            <h2>No Course Found.</h2>
+            <h2>No Jobs Found.</h2>
             <p>Try Another Filters</p>
           </div>
         ) : (
@@ -119,7 +119,7 @@ const CoursesList = () => {
                   <div className={classes.info}>
                     <h3>{item.course_name} </h3>
                     <p>{item.author} </p>
-                    <p>Course </p>
+                    <p>Job </p>
                     <div>
                       <Grid
                         Grid
@@ -146,7 +146,6 @@ const CoursesList = () => {
                       </Grid>
                     </div>
 
-                    <h4>Level: {item.level} </h4>
                   </div>
                 </div>
                 <Divider style={{ width: '70%', margin: 'auto' }} />
@@ -169,4 +168,4 @@ const CoursesList = () => {
   );
 };
 
-export default CoursesList;
+export default JobList;
