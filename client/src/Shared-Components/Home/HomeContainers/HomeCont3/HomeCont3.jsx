@@ -36,7 +36,7 @@ export const HomeCont3 = () => {
                 Join for free
               </Button>
               <Button variant="outlined" size="large" className={classes.btn2}>
-                Try coursera for business
+                Try smartify for business
               </Button>
             </Box>
           </Box>
