@@ -14,7 +14,8 @@ import { EditProfile } from '../Pages/EditProfile/EditProfile';
 import SignupPage from '../Pages/SignupPage';
 import CategoryCoursesPage from '../Pages/CategoryCoursesPage/CategoryCoursesPage';
 import { StudentsList } from '../Pages/AdminCoursePage/StudentsList';
-import Job from '../Pages/Jobs/JobPage';
+import CategoryJobsPage from '../Pages/CategoryJobsPage/CategoryJobsPage';
+import JobDetailsPage from '../Pages/JobDetailsPage';
 
 const Routes = () => {
   return (
@@ -30,7 +31,10 @@ const Routes = () => {
           <CourseDetailsPage />
         </Route>
         <Route exact path="/browse/job">
-          <Job />
+          <CategoryJobsPage />
+        </Route>
+        <Route exact path="/browse/job/:courseName">
+          <JobDetailsPage />
         </Route>
         <Route exact path="/courseMat/:id">
           <CourseMaterial />

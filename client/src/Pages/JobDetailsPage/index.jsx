@@ -1,3 +1,3 @@
-import CourseDetailsPage from './JobDetailsPage';
+import JobDetailsPage from './JobDetailsPage';
 
-export default CourseDetailsPage;
+export default JobDetailsPage;

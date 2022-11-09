@@ -65,11 +65,10 @@ const JobBanner = ({ course }) => {
               {/* {JSON.stringify(activeUser)} */}
               <p>
                 <span className={classes.description}>
-                  Build Complete Web and Hybrid Mobile Solutions. Master
-                  front-end web, hybrid mobile app and server
+                  Become a Complete Web and Hybrid Mobile Solutions Technician.
                 </span>
                 <span className={`${classes.description} ${classes.descp}`}>
-                  -side development in three comprehensive courses.
+                  job in professional MNC company.
                 </span>
               </p>
 
