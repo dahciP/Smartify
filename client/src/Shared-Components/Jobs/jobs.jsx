@@ -18,7 +18,7 @@ import Navbar from '../Navbar/Navbar';
 import useDocumentTitle from '../../CustomHooks/useDocumentTitle';
 
 // eslint-disable-next-line react/prop-types
-const CoursesList = () => {
+const JobList = () => {
   useDocumentTitle('Smartify | Search');
 
   const classes = useStyles();
