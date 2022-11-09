@@ -13,17 +13,17 @@ import useDocumentTitle from '../../CustomHooks/useDocumentTitle';
 import Spinner from '../../Shared-Components/Spinner';
 
 const JobDetailsPage = () => {
-  const { category, courseName } = useParams();
+  const { category, courseName: jobName } = useParams();
 
   const dispatch = useDispatch();
-  const course = useSelector((state) => state.courseDetails.course);
-  const isLoading = useSelector((state) => state.courseDetails.isLoading);
+  const job = useSelector((state) => state.jobDetails.job);
+  const isLoading = useSelector((state) => state.jobDetails.isLoading);
 
-  useDocumentTitle(`Smartify | ${course.course_name}`);
+  useDocumentTitle(`Smartify | ${job.course_name}`);
 
   React.useEffect(() => {
-    dispatch(fetchCourse(category, courseName));
-  }, [category, courseName]);
+    dispatch(fetchCourse(category, jobName));
+  }, [category, jobName]);
 
   if (isLoading) {
     return <Spinner />;
@@ -33,9 +33,9 @@ const JobDetailsPage = () => {
   return (
     <div>
       <Navbar />
-      <JobBanner course={course} />
+      <JobBanner job={job} />
       <JobNav />
-      <JobAbout courseDetails={course.course_details} />
+      <JobAbout jobDetails={job.course_details} />
       <hr />
     </div>
   );
