@@ -36,7 +36,7 @@ import PersonIcon from '@material-ui/icons/Person';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory, Link } from 'react-router-dom';
+import { useHistory, Link} from 'react-router-dom';
 import Searchbar from '../Searchbar/Searchbar';
 import useStyles from './NavbarStyles';
 import { signin, logoutUser } from '../../Redux/Auth/actions';
@@ -50,10 +50,13 @@ const Navbar = () => {
   const [state, setState] = React.useState({
     top: false,
   });
-
   const handleOpen = () => {
     setOpen(true);
   };
+  const visit = () =>{
+    const path = "/browse/job"
+    history.push(path);
+  }
 
   const handleClose = () => {
     setOpen(false);
@@ -427,9 +430,8 @@ const Navbar = () => {
           </Hidden>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <Link to="/browse/job">
-              <Button color="inherit">JOBS</Button>
-            </Link>
+            <Button color="inherit" onClick={visit}>JOBS</Button>
+
             {!isAuth && (
               <Button type="button" color="inherit" onClick={handleOpen}>
                 Login
