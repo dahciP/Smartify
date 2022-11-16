@@ -20,6 +20,7 @@
     "mocha": "^10.1.0",
     "mongoose": "^5.12.12",
     "react-player": "^2.11.0",
-    "save-dev": "^0.0.1-security"
+    "save-dev": "^0.0.1-security",
+    "test": "^3.2.1"
   }
 }
