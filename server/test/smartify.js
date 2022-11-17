@@ -17,7 +17,6 @@ describe('Validate Event', () => {
                 .get('/profile/')
                 .then((res)=> {
                     chai.expect(res).to.have.status(200);
-                    // res.should.have.status(200)
                 });
         });
     })
