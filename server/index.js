@@ -33,6 +33,10 @@ mongoose.connect(uri, options);
 
 const connection = mongoose.connection;
 
+app.get("/",(req,res)=>{
+  res.json("server started");
+})
+
 connection.once("open", () => {
   console.log("MongoDB connection established successfully");
   app.listen(port, () => {

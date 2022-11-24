@@ -27,7 +27,7 @@ export const getJobFailure = () => {
 export const fetchCourse = (category, jobName) => (dispatch) => {
   dispatch(getJobReq());
   return axios
-    .get(`http://localhost:5000/course/${category}/${jobName}`)
+    .get(`https://smartifyroshanchinmay.herokuapp.com/course/${category}/${jobName}`)
     .then((res) => {
       dispatch(getJobSuccess(res.data.data[0]));
     })

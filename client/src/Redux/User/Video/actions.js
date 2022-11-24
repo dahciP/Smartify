@@ -74,7 +74,7 @@ export const getVideos = (courseId) => (dispatch) => {
   dispatch(getVideosRequest());
 
   return axios
-    .get(`http://localhost:5000/video/${courseId}/videos`)
+    .get(`https://smartifyroshanchinmay.herokuapp.com/video/${courseId}/videos`)
     .then((res) => dispatch(getVideosSuccess(res.data.data)))
     .catch((err) => {
       dispatch(getVideosFailure());
@@ -86,7 +86,7 @@ export const getCourseName = (courseId) => (dispatch) => {
   dispatch(getCourseNameRequest());
 
   return axios
-    .get(`http://localhost:5000/course/${courseId}`)
+    .get(`https://smartifyroshanchinmay.herokuapp.com/course/${courseId}`)
     .then((res) => dispatch(getCourseNameSuccess(res.data.data)))
     .catch((err) => {
       dispatch(getCourseNameFailure());

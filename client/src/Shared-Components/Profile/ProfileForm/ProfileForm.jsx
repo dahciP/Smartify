@@ -68,7 +68,7 @@ export const ProfileForm = () => {
 
           //patch req
           axios
-            .put(`http://localhost:5000/user/${user._id}`, {
+            .put(`https://smartifyroshanchinmay.herokuapp.com/user/${user._id}`, {
               ...user,
               profile_picture: downloadURL,
             })

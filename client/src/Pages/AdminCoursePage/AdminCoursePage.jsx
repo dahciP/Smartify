@@ -67,7 +67,7 @@ const AdminCoursePage = () => {
 
   const fetchVideoIdsArray = () => {
     return axios
-      .get(`http://localhost:5000/course/${courseId}/videoids`)
+      .get(`https://smartifyroshanchinmay.herokuapp.com/course/${courseId}/videoids`)
       .then(({ data }) => {
         setVideoIds(data.data.video_ids);
       });
@@ -88,7 +88,7 @@ const AdminCoursePage = () => {
       })
       .then(() => {
         axios
-          .patch(`http://localhost:5000/course/${courseId}`, {
+          .patch(`https://smartifyroshanchinmay.herokuapp.com/course/${courseId}`, {
             video_ids: videoIds,
           })
           .then(() => fetchVideoIdsArray())
@@ -120,7 +120,7 @@ const AdminCoursePage = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/course/${courseId}`)
+      .get(`https://smartifyroshanchinmay.herokuapp.com/course/${courseId}`)
       .then((res) => setCourseTitle(res.data.data.course_name));
   }, [courseId]);
 

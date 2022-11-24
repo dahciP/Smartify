@@ -56,7 +56,7 @@ function Searchbar() {
 
   React.useEffect(() => {
     axios
-      .get('http://localhost:5000/course/all')
+      .get('https://smartifyroshanchinmay.herokuapp.com/course/all')
       .then((res) => setCourses(res.data.data))
       .catch((err) => console.log('Error Occured', err));
   }, []);
